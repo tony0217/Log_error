@@ -9220,11 +9220,11 @@ button.close {
 
 /*!
  * Waves v0.7.4
- * http://fian.my.id/Waves 
- * 
- * Copyright 2014 Alfiana E. Sibuea and other contributors 
- * Released under the MIT license 
- * https://github.com/fians/Waves/blob/master/LICENSE 
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
  */
 
 .waves-effect {
@@ -9796,7 +9796,7 @@ a.waves-effect .waves-ripple {
   display: inline-block !important;
 }
 
-/* 
+/*
  * Material Background Colors
  */
 
@@ -9993,7 +9993,7 @@ a.waves-effect .waves-ripple {
 }
 
 /*
- * Border Radius 
+ * Border Radius
  */
 
 .brd-2 {
@@ -14550,7 +14550,7 @@ a.thumbnail.active {
 }
 
 /*
- * Lightbox  
+ * Lightbox
  */
 
 .lightbox .lightbox-item > img {
@@ -15343,4 +15343,24 @@ a.thumbnail.active {
 .breadcrumb {
   border-bottom: 1px solid #E5E5E5;
   border-radius: 0;
+}
+
+.logo-login{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    content: "";
+    z-index: 0;
+}
+#arrow_home {
+    width: 70px;
+    transform: rotate(-45deg);
+    opacity: 0.6;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  
 }

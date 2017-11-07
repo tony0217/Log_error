@@ -2333,8 +2333,8 @@ body.login-content:before {
 
 @media (max-width: 767px) {
   [data-current-skin="lightblue"] .ha-menu {
-    background: #03a9f4;
-  }
+   background: #03a9f4;
+ }
 }
 
 [data-current-skin="bluegray"] {
@@ -2352,7 +2352,7 @@ body.login-content:before {
 }
 
 [data-current-skin="blue"] {
-  background-color: #2196f3;
+background-color: #505050;
 }
 
 [data-current-skin="blue"] .ss-icon {
