@@ -1,4 +1,6 @@
-<header id="header" data-current-skin={{mactrl.currentSkin}} data-ng-include src="'template/header.html'" data-ng-controller="headerCtrl as hctrl"></header>
+<header id="header" data-current-skin={{mactrl.currentSkin}} data-ng-include src="'template/header.html'" data-ng-controller="headerCtrl as hctrl" style="background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #505050), color-stop(1, #3D3D3D));
+    background-image: -webkit-linear-gradient(top, #505050 0%, #3D3D3D 100%);
+    background-image: linear-gradient(to bottom, #505050 0%, #3D3D3D 100%);" data-current-skin="blue"></header>
 
 <section id="main">
     <aside id="sidebar" data-ng-include src="'template/sidebar-left.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.left === true }"></aside>
@@ -10,5 +12,3 @@
 </section>
 
 <footer id="footer" data-ng-include src="'template/footer.html'"></footer>
-
-

@@ -1,0 +1,49 @@
+
+<style>
+  .ng-table-pager{
+    display:none;
+  }
+</style>
+
+<div class="container" style="width:99% !important;" data-ng-controller="tableCtrl as tctrl">
+
+<h2>Token </h2>
+<small> </small>
+
+  <div class="card" style="margin-top:50px;">
+    <div class="card-header" style="background: rgba(0, 0, 0, 0.19);">
+  <h2>Registro de Errores </h2>
+</div>
+
+      <div class="card-body">
+          <div class="table-responsive" style="padding: 15px;  height: 450px;  overflow-y: auto;">
+              <table ng-table="tctrl.tableBasic" class="table table-striped table-vmiddle">
+                  <tr ng-repeat="w in $data">
+                      <td data-title="'ID'">
+                          {{ w.id }}
+                      </td>
+                      <td data-title="'Name'">
+                          {{ w.name }}
+                      </td>
+                      <td data-title="'Email'">
+                          {{ w.email }}
+                      </td>
+                      <td data-title="'Username'">
+                          {{ w.username }}
+                      </td>
+                      <td data-title="'Contact'">
+                          {{ w.contact }}
+                      </td>
+
+                      <td data-title="'Actions'">
+
+                        <button type="button" class="btn bgm-green " data-ui-sref="Detalles.common" ng-click="verDetalles(w.id)" ><i class="zmdi zmdi-menu"></i>  Ver detalles </button>
+
+                      </td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+  </div>
+
+</div>

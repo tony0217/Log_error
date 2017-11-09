@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://localhost:3000/angular/#/errors/cuenta -->
+<html data-ng-app="materialAdmin" data-ng-controller="materialadminCtrl as mactrl" class="ng-scope"><!--[endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Hypersoft</title>
+
+        <!-- Vendor CSS -->
+        <link href="./Hypersoft_files/animate.min.css" rel="stylesheet">
+        <link href="./Hypersoft_files/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="./Hypersoft_files/sweet-alert.css" rel="stylesheet">
+        <link href="./Hypersoft_files/loading-bar.css" rel="stylesheet">
+        <link href="./Hypersoft_files/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="./Hypersoft_files/app.min.1.css" rel="stylesheet" id="app-level">
+        <link href="./Hypersoft_files/app.min.2.css" rel="stylesheet">
+        <link href="./Hypersoft_files/demo.css" rel="stylesheet">
+
+    </head>
+
+    <body data-ng-class="{ &#39;sw-toggled&#39;: mactrl.layoutType === &#39;1&#39;}">
+
+        <!-- uiView:  --><data ui-view="" class="ng-scope" style=""><!-- ngInclude:  --><header id="header" data-current-skin="blue" data-ng-include="" src="&#39;template/header.html&#39;" data-ng-controller="headerCtrl as hctrl" style="background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #505050), color-stop(1, #3D3D3D));
+    background-image: -webkit-linear-gradient(top, #505050 0%, #3D3D3D 100%);
+    background-image: linear-gradient(to bottom, #505050 0%, #3D3D3D 100%);" class="ng-scope"><ul class="header-inner clearfix ng-scope">
+    <li id="menu-trigger" data-target="mainmenu" data-toggle-sidebar="" data-model-left="mactrl.sidebarToggle.left" data-ng-class="{ &#39;open&#39;: mactrl.sidebarToggle.left === true }" class="ng-isolate-scope">
+        <div class="line-wrap">
+            <div class="line top"></div>
+            <div class="line center"></div>
+            <div class="line bottom"></div>
+        </div>
+    </li>
+
+    <li class="logo hidden-xs ">
+      <img alt="" src="./Hypersoft_files/logo-hypersoft.png" style="width: 177px;" data-ui-sref="home" data-ng-click="mactrl.sidebarStat($event)" href="#/home">
+  
+    </li>
+    <li class="pull-right">
+        <ul class="top-menu" style="text-align: center;">
+
+        <div style="font-size: 13px;  color: #F8BD2F;">¿Necesitas ayuda del equipo de Hypersoft? </div>
+
+            <a class="btn bgm-green btn-xs waves-effect" target="_blank" href="http://soporte.hypersoft.co/"><i class="zmdi zmdi-help zmdi-hc-fw"></i> Contáctanos</a>
+        </ul>
+    </li>
+</ul>
+
+<!-- Top Search Content -->
+<div id="top-search-wrap" class="ng-scope">
+    <div class="tsw-inner">
+        <i id="top-search-close" class="zmdi zmdi-arrow-left" data-ng-click="hctrl.closeSearch()"></i>
+        <input type="text">
+    </div>
+</div>
+</header>
+
+<section id="main" class="ng-scope">
+    <!-- ngInclude:  --><aside id="sidebar" data-ng-include="" src="&#39;template/sidebar-left.html&#39;" data-ng-class="{ &#39;toggled&#39;: mactrl.sidebarToggle.left === true }" class="ng-scope" style=""><div class="sidebar-inner c-overflow ng-scope mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" style="position: relative; overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical_horizontal mCSB_outside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y mCS_x_hidden mCS_no_scrollbar_x" style="position: relative; top: 0px; left: 0px; width: 100%;" dir="ltr">
+    <div class="profile-menu">
+        <a href="http://localhost:3000/angular/" toggle-submenu="">
+            <div class="profile-pic">
+                <img src="./Hypersoft_files/user.jpg" alt="" class="mCS_img_loaded">
+            </div>
+
+            <div class="profile-info" style="background: #b3b3b3;">
+                User
+
+                <i class="zmdi zmdi-caret-down"></i>
+            </div>
+        </a>
+
+        <ul class="main-menu">
+            <li>
+                <a data-ui-sref="pages.profile.profile-about" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/pages/profile/profile-about"><i class="zmdi zmdi-account"></i> Ver perfil</a>
+            </li>
+
+            <li>
+                <a href="http://localhost:3000/angular/"><i class="zmdi zmdi-time-restore"></i> Cerrar Sesión</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="main-menu">
+
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="home" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/home"><i class="zmdi zmdi-home"></i> Inicio</a>
+        </li>
+
+        <li class="sub-menu active toggled" data-ng-class="{ &#39;active toggled&#39;: mactrl.$state.includes(&#39;Error&#39;) }">
+            <a href="http://localhost:3000/angular/" toggle-submenu=""><i class="zmdi zmdi-close-circle"></i> Errores</a>
+
+            <ul>
+                <!--<li><a data-ui-sref-active="active" data-ui-sref="tables.tables" data-ng-click="mactrl.sidebarStat($event)">Tables</a></li>-->
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.cuenta" data-ng-click="mactrl.sidebarStat($event)" class="active" href="http://localhost:3000/angular/#/errors/cuenta">Cuenta</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.tip_error" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/errors/tipo-error">Tipo de Error</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.usuario" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/errors/usuario">Usuario</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.fecha" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/errors/fecha">Fecha</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.aplicacion" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/errors/aplicacion">Aplicacion</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.fe-be" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/errors/fe-be">Front-end/Back-end</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.sistema" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/errors/sistema">Sistema(DMS-WFL)</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="Error.token" data-ng-click="mactrl.sidebarStat($event)" href="http://localhost:3000/angular/#/errors/token">Token</a></li>
+
+            </ul>
+        </li>
+
+
+
+      <!--  <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('user-interface') }">
+            <a href="" toggle-submenu><i class="zmdi zmdi-swap-alt"></i>User Interface</a>
+            <ul>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.ui-bootstrap" data-ng-click="mactrl.sidebarStat($event)">UI Bootstrap</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.colors" data-ng-click="mactrl.sidebarStat($event)">Colors</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.animations" data-ng-click="mactrl.sidebarStat($event)">Animations</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.box-shadow" data-ng-click="mactrl.sidebarStat($event)">Box Shadow</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.buttons" data-ng-click="mactrl.sidebarStat($event)">Buttons</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.icons" data-ng-click="mactrl.sidebarStat($event)">Icons</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.alerts" data-ng-click="mactrl.sidebarStat($event)">Alerts</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.preloaders" data-ng-click="mactrl.sidebarStat($event)">Preloaders</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.notifications-dialogs" data-ng-click="mactrl.sidebarStat($event)">Notifications & Dialogs</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.media" data-ng-click="mactrl.sidebarStat($event)">Media</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="user-interface.other-components" data-ng-click="mactrl.sidebarStat($event)">Others</a></li>
+            </ul>
+        </li> -->
+
+
+
+
+
+      <!--   <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('pages') }">
+            <a href="" toggle-submenu><i class="zmdi zmdi-collection-item"></i> Sample Pages</a>
+            <ul>
+                <li><a data-ui-sref-active="active" data-ui-sref="pages.profile.profile-about" data-ng-click="mactrl.sidebarStat($event)">Profile</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="pages.listview" data-ng-click="mactrl.sidebarStat($event)">List View</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="pages.messages" data-ng-click="mactrl.sidebarStat($event)">Messages</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="pages.pricing-table" data-ng-click="mactrl.sidebarStat($event)">Pricing Table</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="pages.contacts" data-ng-click="mactrl.sidebarStat($event)">Contacts</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="pages.invoice" data-ng-click="mactrl.sidebarStat($event)">Invoice</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="pages.wall" data-ng-click="mactrl.sidebarStat($event)">Wall</a></li>
+                <li><a href="login.html">Login and Sign Up</a></li>
+                <li><a href="lockscreen.html">Lockscreen</a></li>
+                <li><a href="404.html">Error 404</a></li>
+            </ul>
+        </li> -->
+
+
+    </ul>
+</div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; height: 0px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div><div id="mCSB_1_scrollbar_horizontal" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_horizontal" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_horizontal" class="mCSB_dragger" style="position: absolute; min-width: 50px; width: 0px; left: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+</aside>
+
+
+    <!-- uiView:  --><section id="content" class="page-view ng-scope" data-ui-view="">
+<h2 class="ng-scope">Errores de cuentas  </h2>
+<small class="ng-scope"> With lease settings enabled.</small>
+<!-- ngInclude:  --><section data-ng-include="" src="&#39;views/data-table.html&#39;" class="ng-scope" style="">
+
+<div class="container ng-scope" style="width:99% !important;" data-ng-controller="tableCtrl as tctrl">
+  <style>
+    .ng-table-pager{
+      display:none;
+    }
+  </style>
+
+
+  <div class="card" style="margin-top:50px;">
+    <div class="card-header" style="background: rgba(0, 0, 0, 0.19);">
+  <h2>Registro de Errores </h2>
+</div>
+
+
+  </div>
+
+</div>
+</section>
+</section>
+
+</section>
+
+<!-- ngInclude:  --><footer id="footer" data-ng-include="" src="&#39;template/footer.html&#39;" class="ng-scope" style=""><span class="ng-scope">Hypersoft. Todos los derechos reservados 2011 - 2017
+</span></footer>
+</data>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="iew-container">
+                    <ul class="iew-download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>
+        <![endif]-->
+
+
+        <!-- Core -->
+        <script src="./Hypersoft_files/jquery.min.js"></script>
+
+        <!-- Angular -->
+        <script src="./Hypersoft_files/angular.min.js"></script>
+        <script src="./Hypersoft_files/angular-animate.min.js"></script>
+        <script src="./Hypersoft_files/angular-resource.min.js"></script>
+
+        <!-- Angular Modules -->
+        <script src="./Hypersoft_files/angular-ui-router.min.js"></script>
+        <script src="./Hypersoft_files/loading-bar.js"></script>
+        <script src="./Hypersoft_files/ocLazyLoad.min.js"></script>
+        <script src="./Hypersoft_files/ui-bootstrap-tpls.min.js"></script>
+
+        <!-- Common Vendors -->
+        <script src="./Hypersoft_files/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="./Hypersoft_files/sweet-alert.min.js"></script>
+        <script src="./Hypersoft_files/waves.min.js"></script>
+        <script src="./Hypersoft_files/bootstrap-growl.min.js"></script>
+        <script src="./Hypersoft_files/ng-table.min.js"></script>
+
+
+        <!-- Placeholder for IE9 -->
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+
+        <!-- Using below vendors in order to avoid misloading on resolve -->
+        <script src="./Hypersoft_files/jquery.flot.js"></script>
+        <script src="./Hypersoft_files/curvedLines.js"></script>
+        <script src="./Hypersoft_files/jquery.flot.resize.js"></script>
+        <script src="./Hypersoft_files/moment.min.js"></script>
+        <script src="./Hypersoft_files/fullcalendar.min.js"></script>
+        <script src="./Hypersoft_files/jquery.flot.orderBars.js"></script>
+        <script src="./Hypersoft_files/jquery.flot.pie.js"></script>
+        <script src="./Hypersoft_files/jquery.flot.tooltip.min.js"></script>
+        <script src="./Hypersoft_files/nouislider.min.js"></script>
+
+
+        <!-- App level -->
+        <script src="./Hypersoft_files/app.js"></script>
+        <script src="./Hypersoft_files/config.js"></script>
+        <script src="./Hypersoft_files/main.js"></script>
+        <script src="./Hypersoft_files/services.js"></script>
+        <script src="./Hypersoft_files/templates.js"></script>
+        <script src="./Hypersoft_files/ui-bootstrap.js"></script>
+        <script src="./Hypersoft_files/table.js"></script>
+
+
+        <!-- Template Modules -->
+        <script src="./Hypersoft_files/template.js"></script>
+        <script src="./Hypersoft_files/ui.js"></script>
+        <script src="./Hypersoft_files/flot.js"></script>
+        <script src="./Hypersoft_files/other-charts.js"></script>
+        <script src="./Hypersoft_files/form.js"></script>
+        <script src="./Hypersoft_files/media.js"></script>
+        <script src="./Hypersoft_files/components.js"></script>
+        <script src="./Hypersoft_files/calendar.js"></script>
+        <script src="./Hypersoft_files/demo.js"></script>
+    
+
+<div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p class="lead text-muted">Text</p><p><button class="cancel btn btn-lg" tabindex="2">Cancel</button> <button class="confirm btn btn-lg" tabindex="1">OK</button></p></div></div></body></html>
