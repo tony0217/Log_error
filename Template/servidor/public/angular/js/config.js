@@ -125,40 +125,40 @@ materialAdmin
                 templateUrl: 'views/cuentas.html'
             })
 
-            .state ('Error.tip_error', {
-                url: '/tipo-error',
-                templateUrl: 'views/tipos-error.html'
-            })
-
-            .state ('Error.usuario', {
-                url: '/usuario',
-                templateUrl: 'views/usuarios.html'
-            })
-
-            .state ('Error.fecha', {
-                url: '/fecha',
-                templateUrl: 'views/fecha.html'
-            })
-
-            .state ('Error.aplicacion', {
-                url: '/aplicacion',
-                templateUrl: 'views/aplicacion.html'
-            })
-
-            .state ('Error.fe-be', {
-                url: '/fe-be',
-                templateUrl: 'views/front-back.html'
-            })
-
-            .state ('Error.sistema', {
-                url: '/sistema',
-                templateUrl: 'views/sistema.html'
-            })
-
-            .state ('Error.token', {
-                url: '/token',
-                templateUrl: 'views/tokens.html'
-            })
+            // .state ('Error.tip_error', {
+            //     url: '/tipo-error',
+            //     templateUrl: 'views/tipos-error.html'
+            // })
+            //
+            // .state ('Error.usuario', {
+            //     url: '/usuario',
+            //     templateUrl: 'views/usuarios.html'
+            // })
+            //
+            // .state ('Error.fecha', {
+            //     url: '/fecha',
+            //     templateUrl: 'views/fecha.html'
+            // })
+            //
+            // .state ('Error.aplicacion', {
+            //     url: '/aplicacion',
+            //     templateUrl: 'views/aplicacion.html'
+            // })
+            //
+            // .state ('Error.fe-be', {
+            //     url: '/fe-be',
+            //     templateUrl: 'views/front-back.html'
+            // })
+            //
+            // .state ('Error.sistema', {
+            //     url: '/sistema',
+            //     templateUrl: 'views/sistema.html'
+            // })
+            //
+            // .state ('Error.token', {
+            //     url: '/token',
+            //     templateUrl: 'views/tokens.html'
+            // })
 
             //------------------------------
             // Errores detalles
@@ -172,55 +172,51 @@ materialAdmin
             .state ('Detalles.cuenta', {
                 url: 'detalles/cuenta',
                 templateUrl: 'views/detalles-cuenta.html'
-
-            })
-
-            .state ('Detalles.tip_error', {
-                url: 'detalles/tipo-error',
-                templateUrl: 'views/detalles-tipo-error.html'
-
-            })
-
-            .state ('Detalles.usuario', {
-                url: 'detalles/usuario',
-                templateUrl: 'views/detalles-usuario.html'
-
-            })
-
-
-            .state ('Detalles.fecha', {
-                url: 'detalles/fecha',
-                templateUrl: 'views/detalles-fecha.html'
-
-            })
-
-            .state ('Detalles.aplicacion', {
-                url: 'detalles/aplicacion',
-                templateUrl: 'views/detalles-aplicacion.html'
-
-            })
-
-            .state ('Detalles.fe-be', {
-                url: 'detalles/fe-be',
-                templateUrl: 'views/detalles-front-back.html'
-
-            })
-
-            .state ('Detalles.sistema', {
-                url: 'detalles/sistema',
-                templateUrl: 'views/detalles-sistema.html'
-
-            })
-
-            .state ('Detalles.token', {
-                url: 'detalles/token',
-                templateUrl: 'views/detalles-token.html'
-
-            })
-
-
-
-
+            //
+            // })
+            //
+            // .state ('Detalles.tip_error', {
+            //     url: 'detalles/tipo-error',
+            //     templateUrl: 'views/detalles-tipo-error.html'
+            //
+            // })
+            //
+            // .state ('Detalles.usuario', {
+            //     url: 'detalles/usuario',
+            //     templateUrl: 'views/detalles-usuario.html'
+            //
+            // })
+            //
+            //
+            // .state ('Detalles.fecha', {
+            //     url: 'detalles/fecha',
+            //     templateUrl: 'views/detalles-fecha.html'
+            //
+            // })
+            //
+            // .state ('Detalles.aplicacion', {
+            //     url: 'detalles/aplicacion',
+            //     templateUrl: 'views/detalles-aplicacion.html'
+            //
+            // })
+            //
+            // .state ('Detalles.fe-be', {
+            //     url: 'detalles/fe-be',
+            //     templateUrl: 'views/detalles-front-back.html'
+            //
+            // })
+            //
+            // .state ('Detalles.sistema', {
+            //     url: 'detalles/sistema',
+            //     templateUrl: 'views/detalles-sistema.html'
+            //
+            // })
+            //
+            // .state ('Detalles.token', {
+            //     url: 'detalles/token',
+            //     templateUrl: 'views/detalles-token.html'
+            //
+            // })
 
 
             //------------------------------
