@@ -4,15 +4,15 @@ materialAdmin
 
         //Basic Example
         this.tableBasic = new ngTableParams({
-                       // show first page
-            count: data.length          // count per page
+            page: 1,            // show first page
+            count: 10           // count per page
         }, {
-             // length of data
+            total: data.length, // length of data
             getData: function ($defer, params) {
-               count: data.length
                 $defer.resolve(data.slice((params.page() - 1) * params.count(), params.page() * params.count()));
             }
         })
+
 
         //Sorting
         this.tableSorting = new ngTableParams({
