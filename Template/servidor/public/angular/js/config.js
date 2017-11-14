@@ -169,11 +169,57 @@ materialAdmin
 
             })
 
-            .state ('Detalles.common', {
-                url: 'detalles',
-                templateUrl: 'views/detalles-common.html'
+            .state ('Detalles.cuenta', {
+                url: 'detalles/cuenta',
+                templateUrl: 'views/detalles-cuenta.html'
 
             })
+
+            .state ('Detalles.tip_error', {
+                url: 'detalles/tipo-error',
+                templateUrl: 'views/detalles-tipo-error.html'
+
+            })
+
+            .state ('Detalles.usuario', {
+                url: 'detalles/usuario',
+                templateUrl: 'views/detalles-usuario.html'
+
+            })
+
+
+            .state ('Detalles.fecha', {
+                url: 'detalles/fecha',
+                templateUrl: 'views/detalles-fecha.html'
+
+            })
+
+            .state ('Detalles.aplicacion', {
+                url: 'detalles/aplicacion',
+                templateUrl: 'views/detalles-aplicacion.html'
+
+            })
+
+            .state ('Detalles.fe-be', {
+                url: 'detalles/fe-be',
+                templateUrl: 'views/detalles-front-back.html'
+
+            })
+
+            .state ('Detalles.sistema', {
+                url: 'detalles/sistema',
+                templateUrl: 'views/detalles-sistema.html'
+
+            })
+
+            .state ('Detalles.token', {
+                url: 'detalles/token',
+                templateUrl: 'views/detalles-token.html'
+
+            })
+
+
+
 
 
 
