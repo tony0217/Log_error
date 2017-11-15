@@ -1,36 +1,189 @@
 
 
-<div class="container" style="width:99% !important;" data-ng-controller="tableCtrl as tctrl" >
+<div class="container" style="width:99% !important; " data-ng-controller="tableCtrl as tctrl" >
+  <div class="block-header " style="padding: 0 0px !important;" >
+    <h2 style="color: #050505; font-weight: bold; font-size: 21px;">LOG DE ERRORES
+                          	<small style="font-size: 15px;">Gestione todos los errores en el sistema.</small>
+                          </h2>
+          </div>
 
-<h2>Detalles</h2>
-<small> detalles del error</small>
-<div class="card" id="messages-main" ng-hide="viewReport" style="box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15) !important; height: 700px">
+<div class="card" id="messages-main"  style="box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15) !important; height:700px; ">
 
- <div class="ms-menu" style="background:#f8f8f8 !important; height: 100%;">
+ <div class="ms-menu" style="background:#f8f8f8 !important; height: 100%; z-index:0; width:15%;" >
    <div class="ms-block">
      <div class="ms-user">
-       <div style="font-size: 17px; text-align: center;">
-         I.B
+       <div style="font-size: 17px; text-align:center;">
+         Seleccione una categoría
        </div>
+          <br>
+
+
+       <div class="card-body card-padding" style="position: relative; top: 0px; left: 0px; width: 100%; ">
+           <div class="row">
+               <div class="col-sm-12">
+                   <p class="c-black f-500 m-b-0"> Cuenta </p>
+
+                   <div class="form-group">
+                       <div class="fg-line">
+                           <div class="select">
+                               <select class="form-control" >
+                                   <option> </option>
+                                   <option >1</option>
+                                   <option>Option 2</option>
+                                   <option>Option 3</option>
+                                   <option>Option 4</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+   </div>
+
+          <div class="card-body card-padding" style="position: relative; top: 0px; left: 0px; width: 100%;">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <p class="c-black f-500 m-b-0"> Tipo de Error </p>
+
+                      <div class="form-group">
+                          <div class="fg-line">
+                              <div class="select">
+                                  <select class="form-control">
+                                      <option> </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      </div>
+
+                <div class="card-body card-padding" style="position: relative; top: 0px; left: 0px; width: 100%;">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="c-black f-500 m-b-0"> Usuario </p>
+
+                            <div class="form-group">
+                                <div class="fg-line">
+                                    <div class="select">
+                                        <select class="form-control">
+                                            <option> </option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="card-body card-padding" style="position: relative; top: 0px; left: 0px; width: 100%;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="c-black f-500 m-b-0"> Fecha  </p>
+
+                        <div class="form-group">
+                            <div class="fg-line">
+                                <div class="select">
+                                    <select class="form-control">
+                                        <option> </option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="card-body card-padding" style="position: relative; top: 0px; left: 0px; width: 100%;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="c-black f-500 m-b-0"> Frontend - Backend </p>
+
+                    <div class="form-group">
+                        <div class="fg-line">
+                            <div class="select">
+                                <select class="form-control">
+                                    <option> </option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="card-body card-padding" style="position: relative; top: 0px; left: 0px; width: 100%;">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <p class="c-black f-500 m-b-0"> Sistema </p>
+
+                      <div class="form-group">
+                          <div class="fg-line">
+                              <div class="select">
+                                  <select class="form-control">
+                                      <option> </option>
+                                      <option>Option 1</option>
+                                      <option>Option 2</option>
+                                      <option>Option 3</option>
+                                      <option>Option 4</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <div class="card-body card-padding" style="position: relative; top: 0px; left: 0px; width: 100%;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="c-black f-500 m-b-0"> Token </p>
+
+                        <div class="form-group">
+                            <div class="fg-line">
+                                <div class="select">
+                                    <select class="form-control">
+                                        <option> </option>
+                                        <option >Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-sm-3 m-b-15" style=" width:100%; " >
+          <button class="btn bgm-bluegray  waves-effect" ng-click="" data-ui-sref="Error.cuenta" > <i class="zmdi zmdi-search " > Iniciar busqueda</i></button>
+        </div>
      </div>
    </div>
 
  </div>
 
- <div class="ms-body">
-     <div class="lv-body">
-       <br>
-       <br>
-       <div class="modal-body">
-         <div class="table-responsive" >
-           <div class="jumbotron" style="height: 100%; width:100%; padding-top: 120px;background-color: rgba(247, 247, 247, 0)">
-         <h2 style="text-align: center; color:#F8BD2F;">Bienvenido al panel de búsqueda de Errores.</h2>
-         <p style="font-size: 18px;text-align: center">Para iniciar, elija una opción en los criterios de búsqueda del lado izquierdo</p>
 
-       </div>
-       </div>
-       <br>
-     </div>
- </div>
+
+ <div class="ms-body">
+    <section id="content" class="page-view" data-ui-view></section>
 </div>
 </div>

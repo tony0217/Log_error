@@ -125,11 +125,11 @@ materialAdmin
                 templateUrl: 'views/cuentas.html'
             })
 
-            // .state ('Error.tip_error', {
-            //     url: '/tipo-error',
-            //     templateUrl: 'views/tipos-error.html'
-            // })
-            //
+            .state ('Error.tip_error', {
+                url: '/tipo-error',
+                templateUrl: 'views/tipos-error.html'
+            })
+
             // .state ('Error.usuario', {
             //     url: '/usuario',
             //     templateUrl: 'views/usuarios.html'
@@ -172,9 +172,9 @@ materialAdmin
             .state ('Detalles.cuenta', {
                 url: 'detalles/cuenta',
                 templateUrl: 'views/detalles-cuenta.html'
-            //
-            // })
-            //
+
+            })
+
             // .state ('Detalles.tip_error', {
             //     url: 'detalles/tipo-error',
             //     templateUrl: 'views/detalles-tipo-error.html'
@@ -186,8 +186,8 @@ materialAdmin
             //     templateUrl: 'views/detalles-usuario.html'
             //
             // })
-            //
-            //
+
+
             // .state ('Detalles.fecha', {
             //     url: 'detalles/fecha',
             //     templateUrl: 'views/detalles-fecha.html'
@@ -205,7 +205,7 @@ materialAdmin
             //     templateUrl: 'views/detalles-front-back.html'
             //
             // })
-            //
+
             // .state ('Detalles.sistema', {
             //     url: 'detalles/sistema',
             //     templateUrl: 'views/detalles-sistema.html'
