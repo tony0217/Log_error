@@ -4,8 +4,8 @@ materialAdmin
     // =========================================================================
 
     .controller('materialadminCtrl', function($timeout, $state, $scope, growlService){
-        //Welcome Message
-        growlService.growl('Welcome back Mallinda!', 'inverse')
+        //Mensaje de Bienvenido
+        // growlService.growl('Welcome back Mallinda!', 'inverse')
 
 
         // Detact Mobile Browser
@@ -71,15 +71,16 @@ materialAdmin
             this.currentSkin = color;
         }
 
+        this.ocultar = false;
 
-        this.verDetalles = function(_categoria){
 
-        $location.path("/detalles/"+_categoria);
-    }
+     //   this.verDetalles = function(_categoria){
+     //
+     //     $location.path("/detalles/"+_categoria);
+     // }
 
 
     })
-
 
     // =========================================================================
     // Header
