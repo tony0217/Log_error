@@ -180,7 +180,7 @@
               </div>
 
               <div class="col-sm-3 m-b-15" style=" width:100%; " >
-                <button class="btn bgm-bluegray  waves-effect" ng-click="" data-ui-sref="Error.cuenta" ng-model="mactrl.ocultar" > <i class="zmdi zmdi-search " > Iniciar busqueda</i></button>
+                <button class="btn bgm-bluegray  waves-effect" ng-click="mactrl.ocultar()" data-ui-sref="Error.cuenta" ng-model="mactrl.mostrar" > <i class="zmdi zmdi-search " > Iniciar busqueda</i></button>
               </div>
            </div>
          </div>
@@ -193,11 +193,11 @@
 
   <div class="jumbotron" style="height: 100%; width: 100%;  background-color: rgba(247, 247, 247, 0)">
 
-
-    <div class="jumbotron " style="height: 100%; width: 100%; padding-top: 120px; background-color: rgba(247, 247, 247, 0)" ng-hide="mactrl.ocultar">
-      <h2 style="text-align: center;">Bienvenido al panel de búsqueda de actividades de usuario.</h2>
-      <p style="font-size: 18px; text-align: center">Para iniciar, elija una opción en los criterios de búsqueda del lado izquierdo</p>
-    </div>
+    
+<div class="jumbotron " style="height: 100%; width: 100%; padding-top: 120px; background-color: rgba(247, 247, 247, 0)" ng-hide="mactrl.mostrar">
+    <h2 style="text-align: center;">Bienvenido al panel de búsqueda de actividades de usuario.</h2>
+    <p style="font-size: 18px; text-align: center">Para iniciar, elija una opción en los criterios de búsqueda del lado izquierdo</p>
+  </div>
     <section id="content" class="page-view" data-ui-view></section>
 
   </div>

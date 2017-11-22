@@ -71,7 +71,14 @@ materialAdmin
             this.currentSkin = color;
         }
 
-        this.ocultar = false;
+        //ocultar el Bienvenido
+
+        this.mostrar = false;
+
+        this.ocultar = function(){
+
+          this.mostrar =  true;
+        }
 
 
      //   this.verDetalles = function(_categoria){

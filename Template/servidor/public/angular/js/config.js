@@ -206,11 +206,11 @@ materialAdmin
             //
             // })
 
-            // .state ('Detalles.sistema', {
-            //     url: 'detalles/sistema',
-            //     templateUrl: 'views/detalles-sistema.html'
-            //
-            // })
+            .state ('Detalles.sistema', {
+                url: 'detalles/sistema',
+                templateUrl: 'views/detalles-sistema.html'
+
+            })
             //
             // .state ('Detalles.token', {
             //     url: 'detalles/token',
