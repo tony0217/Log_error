@@ -125,10 +125,10 @@ materialAdmin
                 templateUrl: 'views/cuentas.html'
             })
 
-            .state ('Error.tip_error', {
-                url: '/tipo-error',
-                templateUrl: 'views/tipos-error.html'
-            })
+            // .state ('Error.tip_error', {
+            //     url: '/tipo-error',
+            //     templateUrl: 'views/tipos-error.html'
+            // })
 
             // .state ('Error.usuario', {
             //     url: '/usuario',

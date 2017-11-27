@@ -3,7 +3,7 @@ materialAdmin
     // Base controller for common functions
     // =========================================================================
 
-    .controller('materialadminCtrl', function($timeout, $state, $scope, growlService){
+    .controller('materialadminCtrl', function($timeout, $state, $scope, growlService , $window){
         //Mensaje de Bienvenido
         // growlService.growl('Welcome back Mallinda!', 'inverse')
 
@@ -71,7 +71,7 @@ materialAdmin
             this.currentSkin = color;
         }
 
-        //ocultar el Bienvenido
+        //Ocultar el Bienvenido
 
         this.mostrar = false;
 
@@ -79,6 +79,17 @@ materialAdmin
 
           this.mostrar =  true;
         }
+
+
+        // volver a resultados
+
+        this.volver_pagina = function(){
+
+              $window.history.back();
+
+        }
+
+
 
 
      //   this.verDetalles = function(_categoria){
